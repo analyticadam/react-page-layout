@@ -1,4 +1,4 @@
-function EmployeeListItem() {
+function EmployeeListItem({ name, title, experience }) {
 	return (
 		<div className="employee">
 			<img
@@ -6,11 +6,10 @@ function EmployeeListItem() {
 				alt=""
 				style={{ width: "100px" }}
 			/>
-			<h4>Employee Name:</h4>
-			<p>Job Title: Software Engineer</p>
-			<p>Years of Experience: 5</p>
+			<h4>Employee Name: {name}</h4>
+			<p>Job Title: {title}</p>
+			<p>Years of Experience: {experience}</p>
 		</div>
 	);
 }
-
 export default EmployeeListItem;
