@@ -1,15 +1,13 @@
-function EmployeeListItem({ name, title, experience }) {
+function EmployeeListItem({ img, name, title }) {
 	return (
 		<div className="employee">
-			<img
-				src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlfGVufDB8fDB8fHww"
-				alt=""
-				style={{ width: "100px" }}
-			/>
-			<h4>Employee Name: {name}</h4>
-			<p>Job Title: {title}</p>
-			<p>Years of Experience: {experience}</p>
+			<img src={img} alt="Profile" />
+			<div>
+				<h4>{name}</h4>
+				<p>{title}</p>
+			</div>
 		</div>
 	);
 }
+
 export default EmployeeListItem;
